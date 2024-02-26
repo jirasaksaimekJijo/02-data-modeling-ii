@@ -64,7 +64,10 @@ docker compose up
    When run, the tool we have configured in the .yml file will execute.
    To enable and proceed with the next steps.
 
-### Step 2: 
+### Step 2: Creating tables and loading data into Cassandra according to the created tables
+
+It will create an events table with columns id, type, pulib and PK id and type
+
 ```bash
      CREATE TABLE IF NOT EXISTS events
     (
@@ -78,4 +81,4 @@ docker compose up
     )
 ```
 
-### Step 3: 
+### Step 3: Get data from Json file all to table in Cassandra
