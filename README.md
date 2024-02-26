@@ -55,6 +55,8 @@ pip install -r requirements.txt
 1. Run the environment so that the tools can be used to perform tasks.
 But because we have a file .yml
 
+The .yml file will configure the environment for Cassandra, making it ready for use.
+
 run in command line
 ```bash
 docker compose up
