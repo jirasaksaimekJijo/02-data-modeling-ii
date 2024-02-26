@@ -63,8 +63,9 @@ docker compose up
 ```
    When run, the tool we have configured in the .yml file will execute.
    To enable and proceed with the next steps.
+### Step 2: 
 
-### Step 2: Creating tables and loading data into Cassandra according to the created tables
+### Step 3: Creating tables and loading data into Cassandra according to the created tables
 
 It will create an events table with columns id, type, pulib and PK id and type
 
