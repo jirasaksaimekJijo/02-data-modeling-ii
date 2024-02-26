@@ -35,7 +35,12 @@ python-dateutil==2.8.2
 pytz==2022.2.1
 six==1.16.0
 ```
+## 
+The command you would use to install libraries, and once executed, the specified libraries will be ready to use. 
 
+```bash
+pip install -r requirements.txt
+```
 - cassandra-driver
 - click
 - geomet
@@ -45,8 +50,7 @@ six==1.16.0
 - six
 
 ## Working steps of this project
-### Step 1: Running PostgreSQL on Docker
-Running PostgreSQL on Docker allows you to deploy and manage a PostgreSQL database system within a Docker container. Docker is a platform that enables developers to package applications and their dependencies into lightweight containers, which can then be easily deployed across different environments.
+### Step 1: 
 
 1. Run the environment so that the tools can be used to perform tasks.
 But because we have a file .yml
