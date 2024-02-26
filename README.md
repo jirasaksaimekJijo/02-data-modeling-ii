@@ -1,22 +1,25 @@
 # Week2: Data-Modeling-with-Cassandra-NoSQL
 
 ## Description
+Cassandra is a NoSQL database system designed to handle large volumes of data with high density, particularly in scenarios where data is written frequently and read in various patterns. It employs various features such as distributed architecture and fault tolerance to ensure efficiency and high stability. Additionally, Cassandra excels in real-time operations and offers flexible scalability, making it popular for systems requiring high speed and reliability. It is especially favored in industries that demand high-speed data management and analysis, such as internet service user tracking systems and financial transaction management platforms.
 
+We can use Cassandra to store data from a JSON file by using tools like DataStax DevCenter or interacting directly with DataStax Apache Cassandra. These tools allow us to connect to the Cassandra database and manage data easily.
 
 ## Prosesc
-1. Extract:
-- Read data from multiple JSON files.
-- Extract relevant fields from each JSON object.
+1. Create Keyspace:
+   In Cassandra, we first create a Keyspace to serve as the storage area for our data. A Keyspace is similar to a database in
+   traditional RDBMS. We can use the CREATE KEYSPACE command to create a Keyspace, specifying the name and other parameters as needed.
 
-2. Transform:
-- Cleanse and transform the extracted data if necessary.
-- Ensure data consistency and integrity.
-- Map the JSON fields to the corresponding columns in the database tables.
+2. Create Table:
+   Once the Keyspace is created, the next step is to create a Table to store our data. We use the CREATE TABLE command to define the
+   name of the table and the schema of the data to be stored.
 
-3. Load:
-- Connect to the PostgreSQL database running on Docker.
-- Create the necessary tables (events, repo, payload, actors) if they don't exist.
-- Insert the transformed data into the respective tables.
+3. Import JSON Data:
+   After creating the Keyspace and Table, we can use DataStax DevCenter or CQL (Cassandra Query Language) commands to import data from
+   the JSON file into the created table. DataStax DevCenter provides convenient tools for this operation, or we can directly use the
+   COPY FROM command to import data from CSV or JSON files via CQL.
+
+4. Querying: Once the data is successfully imported, we can use CQL to query, modify, or delete data as needed.
   
 ## Library Python
 
