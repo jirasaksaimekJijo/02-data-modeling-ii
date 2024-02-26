@@ -23,16 +23,26 @@ We can use Cassandra to store data from a JSON file by using tools like DataStax
   
 ## Library Python
 
-- Python 3.x
-- glob
-- json
-- os
-- psycopg2 
-  
-`If Library doesn't give`
+If you want to consolidate all the libraries and versions into one file for installation in one go, you can use either a requirements.txt file or an environment.yml file. These are convenient and efficient ways to manage dependencies for your project.
+
+- equirements.txt: This file specifies the names of the libraries and the versions to be installed. You can create one like this:
 ```bash
-$ pip install ..... (Library Name)
+cassandra-driver==3.25.0
+click==8.1.3
+geomet==0.2.1.post1
+numpy==1.23.2
+python-dateutil==2.8.2
+pytz==2022.2.1
+six==1.16.0
 ```
+
+- cassandra-driver
+- click
+- geomet
+- numpy
+- python-dateutil
+- pytz
+- six
 
 ## Working steps of this project
 ### Step 1: Running PostgreSQL on Docker
