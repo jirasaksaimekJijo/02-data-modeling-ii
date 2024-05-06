@@ -1,4 +1,4 @@
-#!/workspaces/desktop-tutorial/02/ENV/bin/python
+#!/workspaces/dwh-and-bi/02-data-modeling-ii/ENV/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

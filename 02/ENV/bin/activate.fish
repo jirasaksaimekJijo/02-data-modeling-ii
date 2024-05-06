@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/workspaces/desktop-tutorial/02/ENV"
+set -gx VIRTUAL_ENV "/workspaces/dwh-and-bi/02-data-modeling-ii/ENV"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
